@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: aliceblue;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(6, 0, 31);
+}
+.line{
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3a s;
+}
+.line:hover{
+    color: rgb(141, 146, 228);
+    transition: all 0.3s;
+}
+.line span{
+    color: rgb(25, 25, 242);
+}
+.header img{
+    width: 150px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.header ul{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+    padding: 10px 30px;
+    align-items: center;
+}
+.header ul li{
+    display: block;
+    list-style: none;
+    padding: 10px 30px;
+}
+.header ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 23px;
+    cursor: pointer;
+}
+.header ul li a:hover{
+    color: blue;
+}
+.drop_menu{
+    display: none;
+}
+.header ul li:hover .drop_menu{
+    display: block;
+    position: absolute;
+    background-color:rgba(6, 0, 31) ;
+    align-items: center;
+    
+}
+.header ul li:hover .drop_menu ul{
+    display: block;
+    justify-content:left;
+}
+.header ul li:hover .drop_menu ul li{
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+.drop_down1{
+    display: none;
+}
+.header ul li:hover .drop_down1{
+    display: block;
+    position: absolute;
+    background-color:rgba(6, 0, 31) ;
+    align-items: center;
+}
+.header ul li:hover .drop_down1 ul{
+    display: block;
+    justify-content:left;
+    left: 0;
+}
+.header ul li:hover .drop_down1 ul li{
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+/* End Header */
+
+/* Service Content */
+
+.Service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(6, 0, 31);
+    height: 600px;
+    width: 100%;
+    gap: 140px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    background: none;
+    height:500px ;
+    width: 500px;
+}
+.content h1{
+    font-size: 44px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.3S;
+}
+.content h1 span{
+    color: blue;
+}
+.content h1:hover{
+    text-shadow: 2px 2px 3px rgb(16, 86, 238);
+    transition: all 0.3S;
+}
+.content p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.Service img{
+    width: 600px;
+    height: 500px;
+    border-radius: 20%;
+    box-shadow: 25px 25px 5px rgb(3, 0, 14);
+    transition: all 0.3S;
+}
+.Service button{
+    height: 50px;
+    width: 170px;
+    font-size: 20px;
+    background-color: rgba(6, 0, 31);
+    border-radius: 25px;
+    border: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgb(20, 113, 243);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.Service button:hover{
+    box-shadow: 4px 4px 7px  rgb(20, 113, 243);
+    color: rgb(177, 205, 240);
+    transition: all 0.3s;
+    
+
+}
+
+/* End Service Content */
+
+/* Order */
+
+.order{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: rgba(6, 0, 31);
+    height: 600px;
+    width: 100%;
+    gap: 140px;
+}
+.order img{
+    width: 600px;
+    height: 500px;
+    border-radius: 20%;
+    box-shadow: -25px 25px 5px rgb(3, 0, 14);
+    transition: all 0.3S;
+}
+.gad_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    background: none;
+    height:500px ;
+    width: 500px;
+}
+.gad_content h1{
+    font-size: 44px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.3S;
+}
+.gad_content h1:hover{
+    text-shadow: -2px 2px 3px rgb(16, 86, 238);
+    transition: all 0.3S;
+}
+.gad_content h1 span{
+    color: blue;
+}
+.gad_content p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.gad_content button{
+    height: 50px;
+    width: 170px;
+    font-size: 20px;
+    background-color: rgba(6, 0, 31);
+    border-radius: 25px;
+    border: none;
+    color: rgb(255, 255, 255);
+    box-shadow: -3px 3px 5px rgb(20, 113, 243);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.gad_content button:hover{
+    box-shadow: -4px 4px 7px  rgb(20, 113, 243);
+    color: rgb(177, 205, 240);
+    transition: all 0.3s;
+}
+
+/* End Gadgets */
+
+/* Contact */
+
+.contact{
+    margin-top: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: rgba(6, 0, 31);
+    height: 800px;
+    width: 100%;
+    gap: 200px;
+}
+.contact h1{
+    font-size: 44px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.3S;
+    margin-bottom: 40px;
+}
+.contact h1 span{
+    color: blue;
+}
+.contact h1:hover{
+    text-shadow: 2px 2px 3px rgb(16, 86, 238);
+    transition: all 0.3S;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    left: 0;
+}
+.contact form label{
+    font-size: 25px;
+    color: rgba(6, 0, 31);
+}
+.contact form input{
+    height: 35px;
+    width: 420px;
+    font-size: 15px;
+    padding: 10px; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(64, 67, 70,0.2);
+    border: none;
+    box-shadow: 3px 3px 5px rgb(3, 0, 14);
+}
+.contact form input:hover{
+    background-color: rgba(146, 149, 153, 0.2);
+    border: none;
+}
+.contact form textarea{
+    height: 100px;
+    width: 420px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(64, 67, 70,0.2);
+    box-shadow: 3px 3px 5px rgb(3, 0, 14);
+}
+.contact form textarea:hover{
+    background-color: rgba(146, 149, 153, 0.2);
+    border: none;
+}
+.contact img{
+    width: 600px;
+    height: 500px;
+    border-radius: 20%;
+    box-shadow: 25px 25px 5px rgb(3, 0, 14);
+    transition: all 0.3S;
+}
+.contact button{
+    margin-top: 40px;
+    height: 50px;
+    width: 170px;
+    font-size: 20px;
+    background-color: rgba(6, 0, 31);
+    border-radius: 25px;
+    border: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgb(20, 113, 243);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.contact button:hover{
+    box-shadow: 4px 4px 7px  rgb(20, 113, 243);
+    color: rgb(177, 205, 240);
+    transition: all 0.3s;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: rgba(6, 0, 31);
+    height: 400px;
+    width: 100%;
+    background-color:rgba(6, 0, 31) ;
+    gap: 80px;
+}
+.fimg h1{
+    cursor: pointer;
+    font-size: 35px;
+    color: white;
+    transition: all 0.3s;
+}
+.fimg h1:hover{
+    color: rgb(133, 126, 194);
+    transition: all 0.3s;
+}
+.fimg h1 span{
+    color: blue;
+}
+.fimg h3{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+.fimg h4{
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    transition: all 0.2s;
+}
+.fimg h4 span:hover{
+    transition: all 0.2s;
+    color: rgb(52, 39, 229);
+}
+.fimg{
+    height: 200px;
+    width: 300px;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.fimg img{
+    width: 150px;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+.fftr{
+    color: white;
+    height: 200px;
+    width: 300px;
+    margin-top: 80px;
+    margin-right: 50px;
+    border-right: 2px solid  rgb(100, 95, 167);
+}
+.fftr h1{
+    font-size: 25px;
+    color: rgb(181, 179, 202);
+    margin-bottom: 10px;
+}
+.fftr li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.fftr li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(100, 95, 167);
+}
+.fftr li a:hover{
+    color: rgb(181, 179, 202);
+}

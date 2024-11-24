@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landing pade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Header -->
+     
+    <div class="header">
+        <img src="img/logo.png" alt="Logo">
+        <h1 class="line">San<span>Services  </span><i class="fa-solid fa-screwdriver-wrench"></i></h1>
+        <ul >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Repair <i class="fas fa-caret-down"></i></a>
+                <div class="drop_menu">
+                    <ul>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Airpods</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Gadgets <i class="fas fa-caret-down"></i></a>
+                <div class="drop_down1">
+                    <ul>
+                        <li><a href="#">SD card</a></li>
+                        <li><a href="#">Sim card</a></li>
+                        <li><a href="#">Pen drive</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Charger</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+    <!-- End Header -->
+ 
+    <!--Service -->
+
+    <div class="Service">
+        <div class="content">
+            <h1>Your device,<span>Our</span> priority !</h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is your device giving you trouble? I’ll fix it with precision and care, ensuring it works like new again. With fast and reliable service, you can count on me for a hassle-free experience. No matter the issue, I’ve got the skills to handle it all. Trust me to bring your tech back to life—perfectly repaired!</p>
+            <button>Start Service</button>
+        </div>
+        <img src="img/repair.jpg" alt="repair">
+
+    </div>
+
+    <!-- Gadgets -->
+
+    <div class="order">
+        <img src="img/gadgets.jpg" alt="Gadgets">
+        <div class="gad_content">
+            <h1>The Future of <span>Tech</span>, Made <span>Affordable!</span></h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discover the perfect gadgets at prices that won’t strain your budget! From cutting-edge devices to everyday essentials, we bring you the best deals on high-quality tech. Upgrade your lifestyle with premium gadgets designed to make your life smarter and easier. Affordable prices, unmatched performance—why wait? Shop now and enjoy unbeatable value for all your tech needs!</p>
+            <button>Get Gadgets</button>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div class="contact">
+            <div class="place">
+                <h1>Contact <Span>Us</Span></h1>
+                <form action="submit_contact.php" method="post">
+                    <label for="name">&nbsp;Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="&nbsp;&nbsp;Enter your full name" required>
+
+                    <label for="email">&nbsp;Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="&nbsp;&nbsp;Enter your email address" required>
+
+                    <label for="phone">&nbsp;Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="&nbsp;&nbsp;Enter your phone number" required>
+
+                    <label for="message">&nbsp;Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="&nbsp;Enter your message here"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+                </div>
+            <img src="img/contact.jpg" alt="img">
+    </div>
+
+    <!-- Footer-->
+
+    <div class="footer">
+        <div class="fimg">
+            <img src="img/logo.png" alt="Logo">
+            <h1 class="line2">San<span>Services  </span><i class="fa-solid fa-screwdriver-wrench"></i></h1>
+            <h3>@2024 | <i class="fa-brands fa-twitter"></i> | <i class="fa-brands fa-youtube"></i> | <i class="fa-brands fa-instagram"></i></h3>
+            <h4>Ph.No : <span>7340002439</span> | Tel : <span>436-663596</span></h4>
+        </div>
+        <div class="fftr">
+            <h1>About</h1>
+            <li><a href="">About us</a></li>
+            <li><a href="">Legal</a></li>
+            <li><a href="">Cariers</a></li>
+            <li><a href="">In Media</a></li>
+            <li><a href="">Advartice With us</a></li>
+        </div>
+        <div class="fftr">
+            <h1>Brands</h1>
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Oppo</a></li>
+            <li><a href="#">Vivo</a></li>
+            <li><a href="#">Realme</a></li>
+        </div>
+        <div class="fftr">
+            <h1>Branches</h1>
+            <li><a href="#">Chennai</a></li>
+            <li><a href="#">Kanchipuram</a></li>
+            <li><a href="#">Tambaram</a></li>
+            <li><a href="#">Selam</a></li>
+            <li><a href="#">Madurai</a></li>
+        </div>
+
+
+    </div>
+</body>
+</html>
